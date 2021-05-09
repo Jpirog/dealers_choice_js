@@ -1,3 +1,51 @@
+* {
+  box-sizing: border-box;
+}
 h1{
   background-color: antiquewhite;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row:first-child{
+  background-color: lightcoral;
+  font-weight: bold;
+  font-size: 125%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+.row:hover{
+  font-size: 133%;
+  color: darkblue;
+}
+
+.col:last-child{
+  flex-grow: 3;
+}
+.col{
+display: flex;
+flex-direction: column;
+flex-basis: 100%;
+flex:1;
+align-items: center;
+justify-content: center;
+}
+.summary{
+flex: 3;
+}
+.row{
+  border-bottom: 1px solid black;;
+}
+h3{
+  text-align: center;
 }
